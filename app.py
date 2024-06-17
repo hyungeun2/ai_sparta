@@ -2,7 +2,7 @@ import os
 from openai import OpenAI
 import streamlit as st
 
-os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = st.secrets['API_KEY']
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 st.title('킹받는 넝~담봇😜')
